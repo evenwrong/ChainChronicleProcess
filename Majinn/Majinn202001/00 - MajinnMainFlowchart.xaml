@@ -74,14 +74,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID20</x:Reference>
+      <x:Reference>__ReferenceID21</x:Reference>
     </Flowchart.StartNode>
     <FlowStep x:Name="__ReferenceID6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">20,503.5</av:Point>
+          <av:Point x:Key="ShapeLocation">50,503.5</av:Point>
           <av:Size x:Key="ShapeSize">200,53</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">20,530 0,530 0,1270 410,1270</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">150,556.5 150,589.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke 魔神" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Majinn\Majinn202001\02 - MajinnHonntaiSequence.xaml">
@@ -90,27 +90,51 @@
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID0">
+        <FlowStep x:Name="__ReferenceID20">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">410,1243.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,53</av:Size>
+              <av:Point x:Key="ShapeLocation">18.5,589.5</av:Point>
+              <av:Size x:Key="ShapeSize">263,61</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">18.5,620 0,620 0,1350 410,1350</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'O'" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="O" KeyModifiers="None" SendWindowMessages="False" SpecialKey="False">
-            <ui:SendHotkey.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e98b408a861c610b0f7dbc0a59b0bbb5" Selector="&lt;wnd app='dnplayer.exe' cls='LDPlayerMainFrame' title='CC模拟器' /&gt;&lt;wnd cls='RenderWindow' title='TheRender' /&gt;&lt;wnd cls='subWin' title='sub' /&gt;" WaitForReady="INTERACTIVE" />
-            </ui:SendHotkey.Target>
-          </ui:SendHotkey>
+          <Assign DisplayName="Assign Flag False" sap:VirtualizedContainerService.HintSize="263,61" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Boolean">[inout_housouFlag]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID0">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">410,1323.5</av:Point>
+                  <av:Size x:Key="ShapeSize">200,53</av:Size>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'O'" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="o" KeyModifiers="None" SendWindowMessages="False" SpecialKey="False">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e98b408a861c610b0f7dbc0a59b0bbb5" Selector="&lt;wnd app='dnplayer.exe' cls='LDPlayerMainFrame' title='CC模拟器' /&gt;&lt;wnd cls='RenderWindow' title='TheRender' /&gt;&lt;wnd cls='subWin' title='sub' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:SendHotkey.Target>
+              </ui:SendHotkey>
+            </FlowStep>
+          </FlowStep.Next>
         </FlowStep>
       </FlowStep.Next>
     </FlowStep>
     <FlowStep x:Name="__ReferenceID7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">20,633.5</av:Point>
+          <av:Point x:Key="ShapeLocation">20,713.5</av:Point>
           <av:Size x:Key="ShapeSize">200,53</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">20,660 0,660 0,1270 410,1270</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">20,740 0,740 0,1350 410,1350</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke 触发" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Majinn\Majinn202001\01 - MajinnMawariSequence.xaml">
@@ -125,9 +149,9 @@
     <FlowStep x:Name="__ReferenceID8">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">420,743.5</av:Point>
+          <av:Point x:Key="ShapeLocation">420,823.5</av:Point>
           <av:Size x:Key="ShapeSize">200,53</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">420,770 320,770 320,786.5</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">420,850 320,850 320,866.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:ImageFound DisplayName="Image Exists 'iie'" Found="[ImageExistsResult]" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="ImageFound_4">
@@ -143,19 +167,19 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <av:Point x:Key="ShapeLocation">277.5,786.5</av:Point>
+              <av:Point x:Key="ShapeLocation">277.5,866.5</av:Point>
               <av:Size x:Key="ShapeSize">85,87</av:Size>
-              <av:PointCollection x:Key="TrueConnector">277.5,830 120,830 120,873.5</av:PointCollection>
-              <av:PointCollection x:Key="FalseConnector">362.5,830 520,830 520,883.5</av:PointCollection>
+              <av:PointCollection x:Key="TrueConnector">277.5,910 120,910 120,953.5</av:PointCollection>
+              <av:PointCollection x:Key="FalseConnector">362.5,910 520,910 520,963.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <FlowDecision.True>
             <FlowStep x:Name="__ReferenceID1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">20,873.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">20,953.5</av:Point>
                   <av:Size x:Key="ShapeSize">200,53</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">20,900 0,900 0,1270 410,1270</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">20,980 0,980 0,1350 410,1350</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:ClickImage DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click Image 'iie'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
@@ -185,9 +209,9 @@
             <FlowStep x:Name="__ReferenceID2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">420,883.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">420,963.5</av:Point>
                   <av:Size x:Key="ShapeSize">200,53</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">420,910 310,910 310,926.5</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">420,990 310,990 310,1006.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:ImageFound DisplayName="Image Exists '击破OK'" Found="[ImageExistsResult]" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="ImageFound_5">
@@ -203,19 +227,19 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <av:Point x:Key="ShapeLocation">267.5,926.5</av:Point>
+                      <av:Point x:Key="ShapeLocation">267.5,1006.5</av:Point>
                       <av:Size x:Key="ShapeSize">85,87</av:Size>
-                      <av:PointCollection x:Key="TrueConnector">267.5,970 120,970 120,1043.5</av:PointCollection>
-                      <av:PointCollection x:Key="FalseConnector">352.5,970 510,970 510,1043.5</av:PointCollection>
+                      <av:PointCollection x:Key="TrueConnector">267.5,1050 120,1050 120,1123.5</av:PointCollection>
+                      <av:PointCollection x:Key="FalseConnector">352.5,1050 510,1050 510,1123.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <FlowDecision.True>
                     <FlowStep x:Name="__ReferenceID3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">20,1043.5</av:Point>
+                          <av:Point x:Key="ShapeLocation">20,1123.5</av:Point>
                           <av:Size x:Key="ShapeSize">200,53</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">20,1070 0,1070 0,1270 410,1270</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">20,1150 0,1150 0,1350 410,1350</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:ClickImage DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click Image '击破OK'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
@@ -245,9 +269,9 @@
                     <FlowStep x:Name="__ReferenceID4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">410,1043.5</av:Point>
+                          <av:Point x:Key="ShapeLocation">410,1123.5</av:Point>
                           <av:Size x:Key="ShapeSize">200,53</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">410,1070 310,1070 310,1096.5</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">410,1150 310,1150 310,1176.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:ImageFound DisplayName="Image Exists 'OK'" Found="[ImageExistsResult]" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="ImageFound_6">
@@ -263,19 +287,19 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <av:Point x:Key="ShapeLocation">267.5,1096.5</av:Point>
+                              <av:Point x:Key="ShapeLocation">267.5,1176.5</av:Point>
                               <av:Size x:Key="ShapeSize">85,87</av:Size>
-                              <av:PointCollection x:Key="TrueConnector">267.5,1140 120,1140 120,1183.5</av:PointCollection>
-                              <av:PointCollection x:Key="FalseConnector">352.5,1140 510,1140 510,1243.5</av:PointCollection>
+                              <av:PointCollection x:Key="TrueConnector">267.5,1220 120,1220 120,1263.5</av:PointCollection>
+                              <av:PointCollection x:Key="FalseConnector">352.5,1220 510,1220 510,1323.5</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <FlowDecision.True>
                             <FlowStep x:Name="__ReferenceID5">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">20,1183.5</av:Point>
+                                  <av:Point x:Key="ShapeLocation">20,1263.5</av:Point>
                                   <av:Size x:Key="ShapeSize">200,53</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">20,1210 0,1210 0,1270 410,1270</av:PointCollection>
+                                  <av:PointCollection x:Key="ConnectorLocation">20,1290 0,1290 0,1350 410,1350</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <ui:ClickImage DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click Image 'OK'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
@@ -356,7 +380,7 @@
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">18.5,369.5</av:Point>
                   <av:Size x:Key="ShapeSize">263,61</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">18.5,400 0,400 0,1270 410,1270</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">18.5,400 0,400 0,1350 410,1350</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <Assign DisplayName="Assign Flag True" sap:VirtualizedContainerService.HintSize="263,61" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -381,8 +405,8 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <av:Point x:Key="ShapeLocation">297.5,426.5</av:Point>
               <av:Size x:Key="ShapeSize">85,87</av:Size>
-              <av:PointCollection x:Key="TrueConnector">297.5,470 120,470 120,503.5</av:PointCollection>
-              <av:PointCollection x:Key="FalseConnector">382.5,470 400,470 400,536.5 340,536.5 340,566.5</av:PointCollection>
+              <av:PointCollection x:Key="TrueConnector">297.5,470 150,470 150,503.5</av:PointCollection>
+              <av:PointCollection x:Key="FalseConnector">382.5,470 400,470 400,616.5 340,616.5 340,646.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <FlowDecision.False>
@@ -390,19 +414,19 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <av:Point x:Key="ShapeLocation">297.5,566.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">297.5,646.5</av:Point>
                   <av:Size x:Key="ShapeSize">85,87</av:Size>
-                  <av:PointCollection x:Key="TrueConnector">297.5,610 120,610 120,633.5</av:PointCollection>
-                  <av:PointCollection x:Key="FalseConnector">382.5,610 540,610 540,559.5</av:PointCollection>
+                  <av:PointCollection x:Key="TrueConnector">297.5,690 120,690 120,713.5</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">382.5,690 520,690 520,719.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <FlowDecision.False>
                 <FlowStep x:Name="__ReferenceID15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">408.5,559.5</av:Point>
+                      <av:Point x:Key="ShapeLocation">388.5,719.5</av:Point>
                       <av:Size x:Key="ShapeSize">263,61</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">540,620.5 540,650.5 520,650.5 520,743.5</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">520,780.5 520,823.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Assign DisplayName="Assign Flag False" sap:VirtualizedContainerService.HintSize="263,61" sap2010:WorkflowViewState.IdRef="Assign_2">
@@ -435,7 +459,7 @@
     <x:Reference>__ReferenceID13</x:Reference>
     <x:Reference>__ReferenceID14</x:Reference>
     <x:Reference>__ReferenceID15</x:Reference>
-    <FlowStep x:Name="__ReferenceID20">
+    <FlowStep x:Name="__ReferenceID21">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">260,13.5</av:Point>
@@ -443,7 +467,7 @@
           <av:PointCollection x:Key="ConnectorLocation">360,66.5 360,86.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Parallel DisplayName="Parallel 检查副本" sap:VirtualizedContainerService.HintSize="1590,152" sap2010:WorkflowViewState.IdRef="Parallel_1">
+      <Parallel DisplayName="Parallel 检查副本" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="Parallel_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -490,16 +514,16 @@
               <av:Point x:Key="ShapeLocation">317.5,86.5</av:Point>
               <av:Size x:Key="ShapeSize">85,87</av:Size>
               <av:PointCollection x:Key="FalseConnector">402.5,130 420,130 420,186.5 360,186.5 360,216.5</av:PointCollection>
-              <av:PointCollection x:Key="TrueConnector">317.5,130 150,130 150,153.5</av:PointCollection>
+              <av:PointCollection x:Key="TrueConnector">317.5,130 110,130 110,153.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <FlowDecision.True>
             <FlowStep x:Name="__ReferenceID19">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">50,153.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">10,153.5</av:Point>
                   <av:Size x:Key="ShapeSize">200,53</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">160,356.5 160,379.5</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">10,180 0,180 0,1350 410,1350</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke HousouOwari Workflow File" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Majinn\Majinn202001\031 - HousouOwariSequence.xaml">
@@ -512,6 +536,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
+              <FlowStep.Next>
+                <x:Reference>__ReferenceID0</x:Reference>
+              </FlowStep.Next>
             </FlowStep>
           </FlowDecision.True>
           <FlowDecision.False>
@@ -523,5 +550,6 @@
     <x:Reference>__ReferenceID17</x:Reference>
     <x:Reference>__ReferenceID18</x:Reference>
     <x:Reference>__ReferenceID19</x:Reference>
+    <x:Reference>__ReferenceID20</x:Reference>
   </Flowchart>
 </Activity>

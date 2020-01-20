@@ -218,7 +218,7 @@
                 <InArgument x:TypeArguments="x:String" x:Key="in_scriptName">ms1</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="500" DisplayName="Click Image 'STOP2'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ClickImage_58" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="700" DisplayName="Click Image 'STOP2'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ClickImage_58" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
               <ui:ClickImage.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -274,7 +274,7 @@
                 <InArgument x:TypeArguments="x:String" x:Key="in_scriptName">ms3</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'STOP4'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ClickImage_60" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="0" DisplayName="Click Image 'STOP4'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ClickImage_60" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
               <ui:ClickImage.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -297,7 +297,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ClickImage>
-            <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="0" DisplayName="Click Image 倍速" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ClickImage_80" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage ContinueOnError="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="0" DelayMS="0" DisplayName="Click Image 倍速" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ClickImage_80" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
               <ui:ClickImage.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -315,7 +315,7 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="&lt;wnd cls='RenderWindow' title='TheRender' /&gt;&lt;wnd cls='subWin' title='sub' /&gt;" WaitForReady="INTERACTIVE" />
               </ui:ClickImage.Target>
             </ui:ClickImage>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke 触发脚本 workflow ms3" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Framework\触发脚本.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke 触发脚本 workflow ms4" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Framework\触发脚本.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_scriptName">ms4</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
