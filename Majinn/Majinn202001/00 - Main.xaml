@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>546,886</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>546,1100</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -55,7 +55,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="526,826" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="526,1000" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -74,6 +74,11 @@
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="c86646b9472b1a5bd45d827cad77531a" Selector="&lt;wnd app='dnplayer.exe' cls='LDPlayerMainFrame' title='CC模拟器' /&gt;&lt;wnd cls='RenderWindow' title='TheRender' /&gt;&lt;wnd cls='subWin' title='sub' /&gt;" WaitForReady="INTERACTIVE" />
       </ui:Activate.Target>
     </ui:Activate>
+    <ui:FindText UiElement="{x:Null}" DisplayName="检查操作录制是否已打开" FormattedText="False" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="FindText_1" Occurrence="1" Text="ms1">
+      <ui:FindText.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="aea6223ecfd6dbcbd67f834fc27a47aa" Selector="&lt;wnd app='dnplayer.exe' cls='LDOperationRecorderWindow' /&gt;" WaitForReady="INTERACTIVE" />
+      </ui:FindText.Target>
+    </ui:FindText>
     <While sap:VirtualizedContainerService.HintSize="484,487" sap2010:WorkflowViewState.IdRef="While_1" Condition="True">
       <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,324" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
