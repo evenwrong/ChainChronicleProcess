@@ -76,7 +76,7 @@
     </ui:Activate>
     <ui:FindText UiElement="{x:Null}" DisplayName="检查操作录制是否已打开" FormattedText="False" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="FindText_1" Occurrence="1" Text="ms1">
       <ui:FindText.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="aea6223ecfd6dbcbd67f834fc27a47aa" Selector="&lt;wnd app='dnplayer.exe' cls='LDOperationRecorderWindow' /&gt;" WaitForReady="INTERACTIVE" />
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="aea6223ecfd6dbcbd67f834fc27a47aa" Selector="&lt;wnd app='dnplayer.exe' cls='LDOperationRecorderWindow' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
       </ui:FindText.Target>
     </ui:FindText>
     <While sap:VirtualizedContainerService.HintSize="484,487" sap2010:WorkflowViewState.IdRef="While_1" Condition="True">
