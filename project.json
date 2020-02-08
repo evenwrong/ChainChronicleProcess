@@ -1,7 +1,7 @@
 {
   "name": "ChainChronicleProcess",
   "description": "Chain Chronicle Process",
-  "main": "Majinn\\Majinn202001\\00 - Main.xaml",
+  "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.6.2]",
     "UiPath.Mail.Activities": "[1.5.1]",
