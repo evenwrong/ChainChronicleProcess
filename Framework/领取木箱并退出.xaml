@@ -17,7 +17,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg1:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'dnplayer.exe  CC模拟器'" sap:VirtualizedContainerService.HintSize="1068,728" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="a516c219b2a83df07fb7e76b8b576f72" Selector="&lt;wnd app='dnplayer.exe' cls='LDPlayerMainFrame' title='CC模拟器' /&gt;">
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'dnplayer.exe  CC模拟器'" sap:VirtualizedContainerService.HintSize="1068,728" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="78671676d6205ddc55e9445a087d043a" Selector="&lt;wnd app='dnplayer.exe' cls='LDPlayerMainFrame' title='CC模拟器' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -34,9 +34,9 @@
             </sap:WorkflowViewStateService.ViewState>
             <Parallel sap:VirtualizedContainerService.HintSize="992,363" sap2010:WorkflowViewState.IdRef="Parallel_1">
               <While sap:VirtualizedContainerService.HintSize="484,317" sap2010:WorkflowViewState.IdRef="While_1" Condition="[imageResult=False]">
-                <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'k'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="kkk" KeyModifiers="None" SendWindowMessages="False" SpecialKey="False">
+                <ui:SendHotkey DelayBetweenKeys="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBefore="0" DelayMS="0" DisplayName="Send Hotkey 'kkk'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="kkk" KeyModifiers="None" SendWindowMessages="False" SpecialKey="False">
                   <ui:SendHotkey.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="aa46986861502f89064b608821f749c0" Selector="&lt;wnd cls='RenderWindow' title='TheRender' /&gt;&lt;wnd cls='subWin' title='sub' /&gt;" WaitForReady="INTERACTIVE" />
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e18514639ca618e8a096162d86666146" Selector="&lt;wnd cls='RenderWindow' title='TheRender' /&gt;&lt;wnd cls='subWin' title='sub' /&gt;" WaitForReady="INTERACTIVE" />
                   </ui:SendHotkey.Target>
                 </ui:SendHotkey>
               </While>
