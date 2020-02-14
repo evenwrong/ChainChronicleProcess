@@ -3,15 +3,13 @@
   "description": "Chain Chronicle Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.6.2]",
-    "UiPath.Mail.Activities": "[1.5.1]",
     "UiPath.System.Activities": "[19.7.0]",
     "UiPath.UIAutomation.Activities": "[19.7.0]"
   },
   "webServices": [],
   "schemaVersion": "4.0",
   "studioVersion": "19.7.0.0",
-  "projectVersion": "202002.1.0.6",
+  "projectVersion": "202002.2.2.1",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
